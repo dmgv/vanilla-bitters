@@ -27,6 +27,7 @@
   --base-border-radius: 3px;
   --base-spacing: 1.5em;
   --small-spacing: calc(var(--base-spacing) / 2);
+  --xtra-smmal-spacing: calc(var(--base-spacing) / 4);
   --base-z-index: 0;
 
   /* Colors */
@@ -37,13 +38,15 @@
   --light-gray: #ddd;
 
   /* ! buttons.css */
-  --button-background-color: var(--action-color);
-  --button-background-color-hover: var(--action-color);
+  --button-background-color: #1565c0;
+  --button-background-color-hover: #11519a;
   /* ! form.css */
   --_form-background-color: #fff;
-  --_form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
-  --_form-box-shadow-focus: var(--_form-box-shadow),
-    0 0 5px rgba(var(--action-color), 0.7);
+  --base-border-color-shade: #b1b1b1;
+  --form-background-color-shade: #f2f2f2;
+  --base-font-color-tint: #858585;
+  --form-box-shadow-focus: inset 0 1px 3px rgba(0, 0, 0, 0.06),
+    0 0 5px rgba(21, 101, 192, 0.7);
 
   /* Font Colors */
   --base-font-color: var(--dark-gray);
