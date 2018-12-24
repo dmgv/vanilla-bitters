@@ -1,0 +1,46 @@
+html {
+  color: var(--base-font-color);
+  font-family: var(--base-font-family);
+  font-size: 100%;
+  line-height: var(--base-line-height);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+  /* font-size: modular-scale(1); */
+  font-size: 1em;
+  line-height: var(--heading-line-height);
+  margin: 0 0 var(--small-spacing);
+}
+
+p {
+  margin: 0 0 var(--small-spacing);
+}
+
+a {
+  color: var(--action-color);
+  text-decoration-skip: ink;
+  transition: color var(--base-duration) var(--base-timing);
+}
+
+a:hover {
+  color: hsla(212, 80%, 33%, 1);
+}
+
+a:focus {
+  outline: var(--focus-outline);
+  outline-offset: var(--focus-outline-offset);
+}
+
+hr {
+  border-bottom: var(--base-border);
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: var(--base-spacing 0);
+}

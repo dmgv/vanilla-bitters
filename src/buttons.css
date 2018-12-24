@@ -1,0 +1,56 @@
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  appearance: none;
+  background-color: var(--_button-background-color);
+  border: 0;
+  border-radius: var(--base-border-radius);
+  /* color: contrast-switch($_button-background-color); */
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: var(--base-font-family);
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: var(--small-spacing) var(--base-spacing);
+  text-align: center;
+  text-decoration: none;
+  transition: background-color var(--base-duration) var(--base-timing);
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+button:hover,
+[type="button"]:hover,
+[type="reset"]:hover,
+[type="submit"]:hover {
+  background-color: var(--_button-background-color-hover);
+  /* color: contrast-switch($_button-background-color-hover); */
+  color: #fff;
+}
+
+button:focus,
+[type="button"]:focus,
+[type="reset"]:focus,
+[type="submit"]:focus {
+  outline: var(--focus-outline);
+  outline-offset: var(--focus-outline-offset);
+}
+
+button:disabled,
+[type="button"]:disabled,
+[type="reset"]:disabled,
+[type="submit"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+button:disabled:hover,
+[type="button"]:disabled:hover,
+[type="reset"]:disabled:hover,
+[type="submit"]:disabled:hover {
+  background-color: var(--_button-background-color);
+}

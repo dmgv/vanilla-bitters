@@ -1,0 +1,68 @@
+:root {
+  /* Typography */
+  --font-stack-system: system-ui, -apple-system, BlinkMacSystemFont,
+    "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue",
+    "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell",
+    "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic",
+    "Liberation Sans", sans-serif;
+  --font-stack-helvetica: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  --font-stack-lucida-grande: "Lucida Grande", "Lucida Sans Unicode", "Geneva",
+    "Verdana", sans-serif;
+  --font-stack-verdana: "Verdana", "Geneva", sans-serif;
+  --font-stack-garamond: "Garamond", "Baskerville", "Baskerville Old Face",
+    "Hoefler Text", "Times New Roman", serif;
+  --font-stack-georgia: "Georgia", "Times", "Times New Roman", serif;
+  --font-stack-hoefler-text: "Hoefler Text", "Baskerville Old Face", "Garamond",
+    "Times New Roman", serif;
+  --font-stack-consolas: "Consolas", "monaco", monospace;
+
+  --base-font-family: var(--font-stack-system);
+  --heading-font-family: var(--base-font-family);
+
+  /* Line height */
+  --base-line-height: 1.5;
+  --heading-line-height: 1.2;
+
+  /* Other Sizes */
+  --base-border-radius: 3px;
+  --base-spacing: 1.5em;
+  --small-spacing: calc(var(--base-spacing) / 2);
+  --base-z-index: 0;
+
+  /* Colors */
+  --blue: hsla(212, 80%, 42%, 1);
+  --blue-transparent: hsla(212, 80%, 42%, 0.6);
+  --dark-gray: #333;
+  --medium-gray: #999;
+  --light-gray: #ddd;
+
+  /* ! buttons.css */
+  --button-background-color: var(--action-color);
+  --button-background-color-hover: var(--action-color);
+  /* ! form.css */
+  --_form-background-color: #fff;
+  --_form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+  --_form-box-shadow-focus: var(--_form-box-shadow),
+    0 0 5px rgba(var(--action-color), 0.7);
+
+  /* Font Colors */
+  --base-font-color: var(--dark-gray);
+  --action-color: var(--blue);
+
+  /* Border */
+  --base-border-color: var(--medium-gray);
+  --base-border: 1px solid var(--base-border-color);
+
+  /* Background Colors */
+  --viewport-background-color: #fff;
+
+  /* Focus */
+  --focus-outline-color: var(--blue-transparent);
+  --focus-outline-width: 3px;
+  --focus-outline: var(--focus-outline-width) solid var(--focus-outline-color);
+  --focus-outline-offset: 2px;
+
+  /* Animations */
+  --base-duration: 150ms;
+  --base-timing: ease;
+}

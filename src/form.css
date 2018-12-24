@@ -1,0 +1,229 @@
+fieldset {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  font-weight: 600;
+  margin-bottom: calc(var(--small-spacing) / 2);
+  padding: 0;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: calc(var(--small-spacing) / 2);
+}
+
+input,
+select,
+textarea {
+  display: block;
+  font-family: var(--base-font-family);
+  font-size: 16px;
+}
+
+[type="color"],
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
+input:not([type]),
+textarea {
+  appearance: none;
+  background-color: var(--_form-background-color);
+  border: var(--base-border);
+  border-radius: var(--base-border-radius);
+  box-shadow: var(--_form-box-shadow);
+  box-sizing: border-box;
+  margin-bottom: var(--small-spacing);
+  padding: calc(var(--base-spacing) / 3);
+  transition: border-color var(--base-duration) var(--base-timing);
+  width: 100%;
+}
+[type="color"]:hover,
+[type="date"]:hover,
+[type="datetime"]:hover,
+[type="datetime-local"]:hover,
+[type="email"]:hover,
+[type="month"]:hover,
+[type="number"]:hover,
+[type="password"]:hover,
+[type="search"]:hover,
+[type="tel"]:hover,
+[type="text"]:hover,
+[type="time"]:hover,
+[type="url"]:hover,
+[type="week"]:hover,
+input:not([type]):hover,
+textarea:hover {
+  /* border-color: shade($base-border-color, 20%); */
+}
+[type="color"]:focus,
+[type="date"]:focus,
+[type="datetime"]:focus,
+[type="datetime-local"]:focus,
+[type="email"]:focus,
+[type="month"]:focus,
+[type="number"]:focus,
+[type="password"]:focus,
+[type="search"]:focus,
+[type="tel"]:focus,
+[type="text"]:focus,
+[type="time"]:focus,
+[type="url"]:focus,
+[type="week"]:focus,
+input:not([type]):focus,
+textarea:focus {
+  border-color: var(--action-color);
+  box-shadow: var(--_form-box-shadow-focus);
+  outline: none;
+}
+[type="color"]:disabled,
+[type="date"]:disabled,
+[type="datetime"]:disabled,
+[type="datetime-local"]:disabled,
+[type="email"]:disabled,
+[type="month"]:disabled,
+[type="number"]:disabled,
+[type="password"]:disabled,
+[type="search"]:disabled,
+[type="tel"]:disabled,
+[type="text"]:disabled,
+[type="time"]:disabled,
+[type="url"]:disabled,
+[type="week"]:disabled,
+input:not([type]):disabled,
+textarea:disabled {
+  /* background-color: shade($_form-background-color, 5%); */
+  cursor: not-allowed;
+}
+[type="color"]:disabled:hover,
+[type="date"]:disabled:hover,
+[type="datetime"]:disabled:hover,
+[type="datetime-local"]:disabled:hover,
+[type="email"]:disabled:hover,
+[type="month"]:disabled:hover,
+[type="number"]:disabled:hover,
+[type="password"]:disabled:hover,
+[type="search"]:disabled:hover,
+[type="tel"]:disabled:hover,
+[type="text"]:disabled:hover,
+[type="time"]:disabled:hover,
+[type="url"]:disabled:hover,
+[type="week"]:disabled:hover,
+input:not([type]):disabled:hover,
+textarea:disabled:hover {
+  border: var(--base-border);
+}
+[type="color"]::-webkit-input-placeholder,
+[type="date"]::-webkit-input-placeholder,
+[type="datetime"]::-webkit-input-placeholder,
+[type="datetime-local"]::-webkit-input-placeholder,
+[type="email"]::-webkit-input-placeholder,
+[type="month"]::-webkit-input-placeholder,
+[type="number"]::-webkit-input-placeholder,
+[type="password"]::-webkit-input-placeholder,
+[type="search"]::-webkit-input-placeholder,
+[type="tel"]::-webkit-input-placeholder,
+[type="text"]::-webkit-input-placeholder,
+[type="time"]::-webkit-input-placeholder,
+[type="url"]::-webkit-input-placeholder,
+[type="week"]::-webkit-input-placeholder,
+input:not([type])::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  /* color: tint($base-font-color, 40%); */
+}
+[type="color"]:-ms-input-placeholder,
+[type="date"]:-ms-input-placeholder,
+[type="datetime"]:-ms-input-placeholder,
+[type="datetime-local"]:-ms-input-placeholder,
+[type="email"]:-ms-input-placeholder,
+[type="month"]:-ms-input-placeholder,
+[type="number"]:-ms-input-placeholder,
+[type="password"]:-ms-input-placeholder,
+[type="search"]:-ms-input-placeholder,
+[type="tel"]:-ms-input-placeholder,
+[type="text"]:-ms-input-placeholder,
+[type="time"]:-ms-input-placeholder,
+[type="url"]:-ms-input-placeholder,
+[type="week"]:-ms-input-placeholder,
+input:not([type]):-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  /* color: tint($base-font-color, 40%); */
+}
+[type="color"]::-ms-input-placeholder,
+[type="date"]::-ms-input-placeholder,
+[type="datetime"]::-ms-input-placeholder,
+[type="datetime-local"]::-ms-input-placeholder,
+[type="email"]::-ms-input-placeholder,
+[type="month"]::-ms-input-placeholder,
+[type="number"]::-ms-input-placeholder,
+[type="password"]::-ms-input-placeholder,
+[type="search"]::-ms-input-placeholder,
+[type="tel"]::-ms-input-placeholder,
+[type="text"]::-ms-input-placeholder,
+[type="time"]::-ms-input-placeholder,
+[type="url"]::-ms-input-placeholder,
+[type="week"]::-ms-input-placeholder,
+input:not([type])::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  /* color: tint($base-font-color, 40%); */
+}
+[type="color"]::placeholder,
+[type="date"]::placeholder,
+[type="datetime"]::placeholder,
+[type="datetime-local"]::placeholder,
+[type="email"]::placeholder,
+[type="month"]::placeholder,
+[type="number"]::placeholder,
+[type="password"]::placeholder,
+[type="search"]::placeholder,
+[type="tel"]::placeholder,
+[type="text"]::placeholder,
+[type="time"]::placeholder,
+[type="url"]::placeholder,
+[type="week"]::placeholder,
+input:not([type])::placeholder,
+textarea::placeholder {
+  /* color: tint($base-font-color, 40%); */
+}
+
+textarea {
+  resize: vertical;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  display: inline;
+  margin-right: calc(var(--small-spacing) / 2);
+}
+
+[type="file"] {
+  margin-bottom: var(--small-spacing);
+  width: 100%;
+}
+
+select {
+  margin-bottom: var(--small-spacing);
+  width: 100%;
+}
+
+[type="checkbox"]:focus,
+[type="radio"]:focus,
+[type="file"]:focus,
+select:focus {
+  outline: var(--focus-outline);
+  outline-offset: var(--focus-outline-offset);
+}
